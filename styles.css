@@ -53,27 +53,25 @@ main {
 }
 
 .title-heading #tic {
-    /* position: relative; */
     transform: translateX(-100%);
-    color: #fff;
-    animation: title-animate-tic 0.5s;
+    animation: title-animate-tic 1s 0.2s;
     animation-fill-mode: forwards;
 }
 
 .title-heading #tac {
-    /* position: relative; */
     transform: translateY(-50%);
-    color: #fff;
-    animation: title-animate-tac 0.5s;
+    animation: title-animate-tac 1s 0.2s;
     animation-fill-mode: forwards;
 }
 
 .title-heading #toe {
-    /* position: relative; */
     transform: translateY(100%);
-    color: #fff;
-    animation: title-animate-toe 0.5s;
+    animation: title-animate-toe 1s 0.2s;
     animation-fill-mode: forwards;
+}
+
+#tic, #tac, #toe {
+    color: #fff;
 }
 
 .letter {
