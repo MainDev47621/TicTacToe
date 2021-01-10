@@ -32,11 +32,14 @@ main {
     top: 50px;
     width: 350px;
     height: 40px;
+    transform: translateY(-200px);
     z-index: 3;
     display: flex;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
+    animation: title-enter 2s;
+    animation-fill-mode: forwards;
 }
 
 .title-heading span {
@@ -54,19 +57,19 @@ main {
 
 .title-heading #tic {
     transform: translateX(-100%);
-    animation: title-animate-tic 1s 0.2s;
+    animation: title-animate-tic 1.7s 0.3s;
     animation-fill-mode: forwards;
 }
 
 .title-heading #tac {
     transform: translateY(-50%);
-    animation: title-animate-tac 1s 0.2s;
+    animation: title-animate-tac 1.7s 0.3s;
     animation-fill-mode: forwards;
 }
 
 .title-heading #toe {
     transform: translateY(100%);
-    animation: title-animate-toe 1s 0.2s;
+    animation: title-animate-toe 1.7s 0.3s;
     animation-fill-mode: forwards;
 }
 
@@ -97,6 +100,16 @@ main {
     100% {
         opacity: 0;
         transform: translateY(-500%) rotate(360deg);
+    }
+}
+
+@keyframes title-enter {
+    0% {
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
 
