@@ -293,3 +293,12 @@ main {
     padding: 0.35em 0.6em;
     cursor: pointer;
 }
+
+
+/* Media query */
+
+@media only screen and (max-height: 512px) {
+    .title-heading {
+        display: none;
+    }
+}
